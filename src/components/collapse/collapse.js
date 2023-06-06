@@ -26,6 +26,7 @@ function Collapse() {
 export default Collapse;*/
 
 import { useState } from 'react';
+import './collapse.css';
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +36,16 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <>
-      <h3 onClick={toggleCollapse}>{title}</h3>
-      {isOpen && <p>{content}</p>}
-    </>
+    <div className='collapse-container'>
+      <div className="collapse">
+        <h3 onClick={toggleCollapse} className="collapse-title">
+          {title} <span className={`arrow ${isOpen ? 'arrow-up' : 'arrow-down'}`} />
+        </h3>
+        {isOpen && <p className="collapse-content">{content}</p>}
+      </div>
+    </div>
   );
 }
+
 
 export default Collapse;

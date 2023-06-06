@@ -1,0 +1,33 @@
+.collapse-container{
+    display: flex;
+    justify-content: center;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+
+}
+.collapse-title{
+    background-color: #ff6060;
+    font-size: 30px;
+    color:white;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 50px 875px;
+    cursor: pointer;
+    margin:65px;
+}
+
+.collapse-content{
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-left: 124px;
+    width: 1700px;
+    font-size: 30px;
+}
+
+
+
+  
+   
+   

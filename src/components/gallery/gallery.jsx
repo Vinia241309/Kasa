@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import Card from '../card/card';
-import Data from '../../data/data.js';
+import Data from '../../data.json';
+import './gallery.css'
 
 function Gallery() {
     const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ function Gallery() {
     return (
         <div className="gallery">
             {data.map((item) => (
-                <Card title={item.title} cover={item.cover} />
+                <Card key={item.id} title={item.title} cover={item.cover} />
             ))}
         </div>
     );

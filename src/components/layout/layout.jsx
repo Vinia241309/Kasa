@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 
+
 function Layout({ children }) {
   return (
     <div className="app">
@@ -9,11 +10,10 @@ function Layout({ children }) {
       <main>
         {children}
       </main>
-      <footer>
-       <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }
+
 
 export default Layout;

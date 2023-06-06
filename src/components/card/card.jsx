@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './card.css';
 function Card({ cover, title, }) {
     console.log(cover)
     return (
