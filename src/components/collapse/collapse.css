@@ -16,6 +16,9 @@
     padding: 50px 875px;
     cursor: pointer;
     margin:65px;
+    display: flex;
+    align-items: center;
+
 }
 
 .collapse-content{
@@ -24,6 +27,13 @@
     margin-left: 124px;
     width: 1700px;
     font-size: 30px;
+    color:#ff6060;
+}
+
+.arrow img{
+    margin-left: 900px;
+    width: 60px;
+    height: 30px;
 }
 
 
