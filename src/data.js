@@ -1,3 +1,4 @@
+const Data = 
 [
 	{
 		"id": "c67ab8a7",
@@ -617,3 +618,4 @@
 		]
 	}
 ]
+export default Data;

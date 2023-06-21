@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Card from '../card/card';
-import Data from '../../data.json';
+import Data from '../../data';
 import './gallery.css'
 
 function Gallery() {
@@ -13,9 +13,9 @@ function Gallery() {
     }, []);
 
     return (
-        <div className="gallery">
+        <div className="gallery gallery--fixed-width ">
             {data.map((item) => (
-                <Card key={item.id} title={item.title} cover={item.cover} />
+                <Card key={item.id} logement={item}/>
             ))}
         </div>
     );

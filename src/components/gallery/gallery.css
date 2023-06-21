@@ -1,14 +1,17 @@
-.gallery{
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 76px;
   border-radius: 25px;
-  width: 75%;
   margin-bottom: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 180px;
   background-color: #f7f7f7;
-  
+}
+
+.gallery--fixed-width {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
 }

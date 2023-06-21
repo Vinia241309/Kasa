@@ -1,0 +1,56 @@
+.location_informations {
+    display: flex;
+    flex-direction: row;
+    color: #ff6060;
+    width: 1240px;
+    margin-top: 50px;
+   justify-content: space-between;
+   align-items: baseline;
+   margin: auto;
+ 
+  }
+
+  .location_informations ul{
+    padding:0;
+    margin-left: -20px; 
+  }
+  .location_content h3{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .location_informations li{
+    background-color: #ff6060;
+    color: white;
+    border-radius: 30px;
+    width: 190px;
+    justify-content: center;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  .host {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .stars{ 
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+  .host img{
+    border-radius: 100px;
+    margin-left: 20px;
+   
+  }
+  .host_identity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    margin-top: 40px ;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  

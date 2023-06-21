@@ -3,20 +3,20 @@
     position: relative;
     border-radius: 25px;
     height: 230px;
-    padding: 20px;
-    max-width: 80%;
-    margin: 43px auto;;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .banner-image img {
-    width: 100%;
-    height: 330px;
+    width: 1240px;
+    height: 223px;
     display: flex;
-    justify-content: center;
+   
     object-fit: cover;
     border-radius: 20px;
-   
-    align-items: center;
+  
   }
 
   .banner-content {
@@ -30,6 +30,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 48px;
+    font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 48px;
   }
 

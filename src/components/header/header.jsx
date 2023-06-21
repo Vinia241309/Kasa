@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.png';
 import './header.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
  function Header() {
 	return (
@@ -11,10 +11,10 @@ import { Link } from 'react-router-dom';
 			<nav>
         <ul>
           <li>
-            <Link to="/accueil">Accueil</Link>
+            <NavLink to="/accueil" exact activeClassName="active">Accueil</NavLink>
           </li>
           <li>
-            <Link to="/about">A Propos</Link>
+            <NavLink to="/about" exact activeClassName="active">A Propos</NavLink>
           </li>
         </ul>
       </nav>

@@ -11,17 +11,16 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className='collapse-container'>
-      <div className="collapse">
-        <h3 onClick={toggleCollapse} className="collapse-title">
-          {title} <span className={`arrow ${isOpen ? 'arrow-up' : 'arrow-down'}`}>
-            <img src={isOpen ? ArrowUp : ArrowDown} alt="Flèche" />
-          </span>
-        </h3>
-        {isOpen && <p className="collapse-content">{content}</p>}
-      </div>
+    <div className={`collapse ${isOpen ? 'open' : ''}`}>
+      <h3 onClick={toggleCollapse} className="collapse-title">
+        {title} <span className={`arrow ${isOpen ? 'arrow-down' : 'arrow-up'}`}>
+          <img src={isOpen ? ArrowDown : ArrowUp} alt="flèche" />
+        </span>
+      </h3>
+      {isOpen && <p className="collapse-content">{content}</p>}
     </div>
   );
 }
 
 export default Collapse;
+
