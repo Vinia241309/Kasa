@@ -21,8 +21,8 @@
   .location_informations li{
     background-color: #ff6060;
     color: white;
-    border-radius: 30px;
-    width: 190px;
+    border-radius: 10px;
+    width: 150px;
     justify-content: center;
     height: 45px;
     display: flex;
@@ -54,3 +54,108 @@
     font-size: 18px;
   }
   
+
+.location_collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.location_collapse .about_collapse{
+
+  margin-top: 20px;
+  width: 730px;
+}
+.location_collapse .collapse-title{
+  width: 500px;
+}
+.location_collapse .collapse-content{
+  width: 70%;
+  margin-top: -28px;
+}
+.host_identity p{
+  width: 100px;
+}
+
+@media only screen and (max-width: 700px){
+  .location_content h2{
+    display: flex;
+    font-size: 1.2em;
+    width: 296px;
+    padding-left: 5px;
+  }
+  .location_content h3{
+    padding-left: 5px;
+  }
+  .location_informations ul{
+    margin-left: 0;
+    align-items: center;
+    margin-bottom: -3px;
+  }
+  .location_informations li{
+    width: 92px;
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+    margin: 7px;
+  }
+  .location_informations{
+    margin-top: 120px;
+  }
+  .location_collapse{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .location_collapse .collapse-title{
+    width: 286px;
+  }
+  .collapse-title{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .location_collapse .about_collapse{
+    margin-bottom: -30px;
+  }
+  .location_collapse .collapse-content{
+    width: 94%;
+    margin-top: -16px;
+  }
+  .location_informations{
+    flex-direction: column;
+  }
+  .host{
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 0;
+  }
+  .host img{
+    margin-left: 55px;
+    width: 20%;
+    height: 20%;
+  }
+  .host_identity{
+    margin-left: 45px;
+    margin-top: 24px;
+  }
+  .host_identity p{
+    width: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  p.host-name {
+    margin-right: 20px;
+  }
+  
+  .stars .star{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  .location_content{
+    margin-top: 50px;
+  }
+}
+
+ 

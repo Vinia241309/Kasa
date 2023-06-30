@@ -1,6 +1,6 @@
 .card{
     width: 30%;
-    height: 500px;
+    height: 370px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    filter: brightness(90%);
 }
 .card h3{
     margin-top: -63px;
@@ -21,4 +22,21 @@
     font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 900;
+    z-index: 1;
+
 }
+@media only screen and (max-width: 700px){
+.card img{
+    width: 300px;
+    height: 300px;
+}
+.card h3{
+    margin-top: -75px;
+    width: 175px;
+    font-size: 1em;
+}
+.card{
+    margin-bottom: -40px;
+}
+  
+  }

@@ -4,10 +4,10 @@
     width: 100%;
     height: 415px;
     border-radius: 25px;
-    margin: 0 ; /* Supprime les marges horizontales et centre la div */
-    margin-top: 50px; /* Réduit l'espace entre le bord de la page et l'image */
-    margin-bottom: 20px; /* Réduit l'espace entre le bord de la page et l'image */
-    padding: 0; /* Supprime les paddings */
+    margin: 0 ; 
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    padding: 0; 
     justify-content:center;
     
   }
@@ -41,6 +41,29 @@
     font-size: 20px;
     font-weight: 500;
 }
-
-  
+@media only screen and (max-width: 700px){
+  .carousel{
+    height: 135px;
+  }
+  .carousel_image img{
+    width: 300px;
+    height: 300px;
+  }
+  .carousel_arrow_right{
+    top:90%;
+    width: 15px;
+    height: 23px;
+    right: 8%;
+  }
+  .carousel_arrow_left{
+    top:90%;
+    width: 15px;
+    height: 23px;
+    left: 8%;
+  }
+  .imgCounter{
+    top: 140%;
+    font-size: 14px;
+  }
+}
   

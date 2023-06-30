@@ -16,14 +16,15 @@ function Banner() {
   }
 
   return (
-    <div className="banner">
-      <div className="banner-content">
-        {page !== '/about' && <h1>Chez vous, partout et ailleurs</h1>}
-        <div className='banner-image'>
-          <img src={image} alt="Image de bannière" />
-        </div>
-      </div>
+    <div className={`banner ${page === '/about' ? 'about-banner' : ''}`}>
+  <div className="banner-content">
+    {page !== '/about' && <h1>Chez vous, partout et ailleurs</h1>}
+    <div className='banner-image'>
+      <img src={image} alt="Image de bannière" />
     </div>
+  </div>
+</div>
+
   );
 }
 

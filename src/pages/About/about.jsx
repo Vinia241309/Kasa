@@ -5,14 +5,22 @@ import './about.css';
 import Banner from '../../components/banner/banner';
 
 export default function About() {
+  const collapseComponents = [];
+
+  for (let i = 0; i < Datas.length; i++) {
+    const data = Datas[i];
+    collapseComponents.push(
+      <Collapse key={data.id} title={data.title} content={data.content} />
+    );
+  }
+
   return (
     <div>
       <Banner />
 
-      
-      {Datas.map((data) => (
-        <Collapse key={data.id} title={data.title} content={data.content} />
-      ))}
+      <div className="about-collapse">
+        {collapseComponents}
+      </div>
     </div>
   );
 }

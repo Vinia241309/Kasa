@@ -13,7 +13,7 @@ function Gallery() {
     }, []);
 
     return (
-        <div className="gallery gallery--fixed-width ">
+        <div className="gallery gallery-fixed-width ">
             {data.map((item) => (
                 <Card key={item.id} logement={item}/>
             ))}

@@ -1,5 +1,5 @@
 .footer {
-    position: fixed;
+    position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -20,4 +20,17 @@
     color: white;
     font-size: 20px;
 }
+@media screen and (max-width: 700px){
+  .footer img{
+    width: 100px;
+  }
+  .footer p{
+    font-size: 15px;
+    width: 115px;
+    text-align: center;
+  }
+  .footer{
+    height: 209px;
+  }
   
+} 
