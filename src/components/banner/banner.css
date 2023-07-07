@@ -57,3 +57,11 @@
      
     }
   }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .banner-image img{
+      width: 665px;
+    } 
+    .banner-content h1{
+      font-size: 30px;
+    }
+      }  

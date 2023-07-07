@@ -72,6 +72,7 @@
 .location_collapse .collapse-content{
   width: 70%;
   margin-top: -28px;
+ 
 }
 .host_identity p{
   width: 100px;
@@ -157,5 +158,50 @@
     margin-top: 50px;
   }
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .location_informations{
+    width: 692px;
+    margin-top: -112px;
+  }
+  .location_informations li{
+    width: 143px;
+    height: 35px;
+    margin-right: -2px;
+  }
+  .location_informations ul{
+    flex-wrap: wrap;
+  }
+  .star{
+    width: 30px;
+    margin-top: -8px;
+  }
+  .location_collapse .about_collapse{
+    width: 373px;
+  }
+  .location_collapse .collapse-title{
+    width: 312px;
+    font-size: 20px;
+    align-items: center;
+    height: 55px;
+  }
+  .location_collapse .collapse-content{
+    width: 84%;
+    margin-top: -18px;
+  }
+  .location_informations h2{
+    font-size: 1.2em;
+  }
+  .host_identity p{
+    width: 54px;
+    margin-right: 10px;
+  }
+  .location_content ul{
+    width: 520px;
+  }
+  .content-container .collapse-content {
+    max-height: 500px; 
+  }
+  
 
+}
  
